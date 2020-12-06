@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- 这种方式知道当前元素width的盒子(width固定) -->
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			html,body{
+				margin: 0px;
+				padding: 0px;
+				background-color: beige;
+			}
+			.parent{
+				position: relative;
+				width: 200px;
+				height: 200px;
+				/* width: 200px; */
+				background-color: #A52A2A;
+			}
+			.child{
+				position: absolute;
+				top: 50%;
+				transform: translate(0%,-50%);
+			}
+			/* 
+			 tranform 为css3的一个属性
+			 transform 属性向元素应用 2D 或 3D 转换。该属性允许我们对元素进行旋转、缩放、移动或倾斜。
+			 旋转：rotate(angle)、rotate3d(x,z,angle)、rotateX(angle)、rotateY(angle)、rotateZ(angle)
+			 缩放：scale(x,y)、scaleX(x)、scaleY(y)、scale3d(x,y,z)、scaleZ(z)
+			 移动：translate(x,y),translate(x,y,z)、translateX(x)、translateY(y)、translateZ(z)
+			 倾斜：skew(x-angle,y-angle)、skewX(angle)、skewY(angle)
+			 
+			 transform:rotate(7deg);
+			 -ms-transform:rotate(7deg); 	/* IE 9 */
+			 -moz-transform:rotate(7deg); 	/* Firefox */
+			 -webkit-transform:rotate(7deg); /* Safari 和 Chrome */
+			 -o-transform:rotate(7deg); 	/* Opera */
+			 */
+		</style>
+	</head>
+	<body>
+		<div class="parent">
+			<div class="child">测试呼吸士大夫</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>css三角形</title>
+	</head>
+	<style>
+		/*transparent是全透明黑色(black)的速记法，即一个类似rgba(0,0,0,0)这样的值。
+			在CSS1中，transparent被用来作为background-color的一个参数值，用于表示背景透明。
+			在CSS2中，border-color也开始接受transparent作为参数值。
+			在CSS3中，transparent被延伸到任何一个有color值的属性上。
+		*/
+		.c3{
+			width: 0px;
+			height: 200px;
+			border-bottom: 30px solid red;
+			border-left: 30px solid transparent;
+			border-right: 30px solid transparent;
+		}
+		.c1{
+			height: 60px;
+		}
+		.heart{
+			position: relative;
+			width: 100px;
+			height: 90px;
+		}
+		.heart:before,.heart::after{
+			position: absolute;
+			content: "";
+			left: 50px;
+			top: 0;
+			width: 50px;
+			height: 80px;
+			background: red;
+			-moz-border-radius: 50px 50px 0 0;
+			border-radius: 50px 50px 0 0;
+			-webkit-transform: rotate(-45deg);
+			-moz-transform: rotate(-45deg);
+			-ms-transform: rotate(-45deg);
+			-o-transform: rotate(-45deg);
+			transform: rotate(-45deg);
+			-webkit-transform-origin: 0 100%;
+			-moz-transform-origin: 0 100%;
+			-ms-transform-origin: 0 100%;
+			-o-transform-origin: 0 100%;
+			transform-origin: 0 100%;
+		}
+		
+		.heart:after {
+		    left: 0;
+		    -webkit-transform: rotate(45deg);
+		       -moz-transform: rotate(45deg);
+		        -ms-transform: rotate(45deg);
+		         -o-transform: rotate(45deg);
+		            transform: rotate(45deg);
+		    -webkit-transform-origin: 100% 100%;
+		       -moz-transform-origin: 100% 100%;
+		        -ms-transform-origin: 100% 100%;
+		         -o-transform-origin: 100% 100%;
+		            transform-origin :100% 100%;
+		}
+	</style>
+	<body>
+		<div class="c3"></div>
+		<div class="c1"></div>
+		<div class="heart"></div>
+	</body>
+</html>

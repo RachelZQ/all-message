@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- 这种方式不知道当前元素width的盒子(width不固定) -->
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			html,body{
+				margin: 0px;
+				padding: 0px;
+				background-color: beige;
+			}
+			.parent{
+				display:table;
+				background-color: #A52A2A;
+			}
+			.between{
+				display: table-cell;
+				vertical-align: middle;
+			}
+			.child{
+				position: absolute;
+				top: 50%;
+				transform: translate(0%,-50%);
+			}
+		</style>
+	</head>
+	<body>
+		<div class="parent">
+			<div class="between">
+				<div class="child">测试呼吸士大夫</div>
+			</div>
+		</div>
+	</body>
+</html>

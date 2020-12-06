@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- 这种方式已经知道当前元素width的盒子(width固定) -->
+		<meta charset="utf-8">
+		<title>margin+width</title>
+		<style>
+			html,body{
+				margin: 0px;
+				padding: 0px;
+				background-color: beige;
+			}
+			.parent{
+				width: 200px;
+				height: 200px;
+				margin: 0 auto;
+				background-color: brown;
+			}
+			.children{
+				width: 50px;
+				height: 50px;
+				background-color: #0000FF;
+				margin: 0 auto;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="parent">
+			撒旦刚
+			<div class="children">
+				测试的孩子
+			</div>
+		</div>
+	</body>
+</html>

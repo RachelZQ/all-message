@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>渐变颜色背景（线性梯度）</title>
+	</head>
+	<style>
+		.div1{
+			height: 90px;
+		}
+		
+		.div2{
+			height: 90px;
+			background: linear-gradient(to right,red,green);
+
+		}
+		.div3{
+			height: 90px;
+			background: linear-gradient(180deg,red,green);
+		}
+		.div4{
+			height: 90px;
+			background: linear-gradient(180deg,red,green);
+		}
+		.div5{
+			height: 90px;
+			background: linear-gradient(135deg,red 0,green 15%,yellow 50%,blue 90%);
+		}
+		.div6{
+			height: 90px;
+			/*网格线*/
+			background: linear-gradient(135deg,transparent 0,transparent 49.5%,green 49.5%,green 50.5%,transparent 50.5%,transparent 100%),
+						linear-gradient(45deg,transparent 0,transparent 49.5%,red 49.5%,red 50.5%,transparent 50.5%,transparent 100%);
+			background-size: 30px 30px;
+		}
+	</style>
+	<body>
+		<div class="div1"></div>
+		<div class="div2"></div>
+		<div class="div1"></div>
+		<div class="div3"></div>
+		<div class="div1"></div>
+		<div class="div4"></div>
+		<div class="div1"></div>
+		<div class="div5"></div>
+		<div class="div1"></div>
+		<div class="div6"></div>
+	</body>
+</html>
